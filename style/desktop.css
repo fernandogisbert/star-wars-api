@@ -1,0 +1,42 @@
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    font-size:4rem;
+}
+
+.title {
+    background-color: yellow;
+    color:black;
+    text-align:center;
+    height: 5rem;
+}
+
+.loading {
+    width:4rem;
+    height: 8rem;
+    align-self: flex-end;
+}
+
+.ocultar {
+    display:none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: yellow;
+}
+
+.eachMovie {
+    width:320px;
+    text-align: center;
+    padding: 0.5rem;
+}
