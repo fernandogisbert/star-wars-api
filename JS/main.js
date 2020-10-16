@@ -22,14 +22,14 @@ const getFilms = async() => {
         let content = '';
         // Imprimir un título por película
         for(film of filmCollection) {
-    
-            // saco todos los titulos y para añadir al html///////////////////////////////////
 
             // console.log(element.title);
             let pelicula = document.getElementById('pelicula');
 
             /////////////////////////////////////////////////////////////////////////////
             content += `<div class="eachMovie">`
+            // saco todos los titulos y para añadir al html///////////////////////////////////
+
             content += `<h2 class="title">${film.title}</h2>
             `;
 
@@ -38,9 +38,7 @@ const getFilms = async() => {
             const personajesPeliculas = film.characters;
             
             // Imprime cada personaje
-            // content += '<ul>';
 
-            const list = document.createElement('ul');
             const listHtml = await getCharacterList(personajesPeliculas);
             content += `<ul>${listHtml}</ul>`;
                 
